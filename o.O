@@ -1,0 +1,11 @@
+Algoritmo calcular_area_perimetro_circulo
+	Escribir 'Ingrese el radio del circulo'
+	Leer radio
+	areaCirculo <- 3.14*radio*radio
+	perimetroCirculo <- 2*3.14*radio
+	Escribir 'El area del circulo es',area
+	Escribir areaCirculo
+	Escribir 'El perimetro del circulo es',perimetro
+	Escribir perimetroCirculo
+FinAlgoritmo
+
