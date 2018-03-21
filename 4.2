@@ -1,0 +1,70 @@
+Proceso Desgloce
+	contador20000<-0;
+	contador10000<-0;
+	contador5000<-0;
+	contador2000<-0;
+	contador1000<-0;
+	contador500<-0;
+	contador100<-0;
+	contador50<-0;
+	contador10<-0;
+	contador5<-0;
+	contador1<-0;
+	Escribir "Ingrese el monto";
+	Leer dinero;
+	Mientras (dinero >= 20000) Hacer
+		dinero<-(dinero-20000);
+		contador20000<-contador20000+1;
+	FinMientras
+	Mientras (dinero >= 10000) Hacer
+		dinero<-dinero-10000;
+		contador10000<-contador10000+1;
+	FinMientras
+	Mientras (dinero >= 5000) Hacer
+		dinero<-dinero-5000;
+		contador5000<-contador5000+1;
+	FinMientras
+	Mientras (dinero >= 2000) Hacer
+		dinero<-dinero-2000;
+		contador2000<-contador2000+1;
+	FinMientras
+	Mientras (dinero >= 1000) Hacer
+		dinero<-dinero-1000;
+		contador1000<-contador1000+1;
+	FinMientras
+	Mientras (dinero >= 500) Hacer
+		dinero<-dinero-500;
+		contador500<-contador500+1;
+	FinMientras
+	Mientras (dinero >= 100) Hacer
+		dinero<-dinero-100;
+		contador100<-contador100+1;
+	FinMientras
+	Mientras (dinero >= 50) Hacer
+		dinero<-dinero-50;
+		contador50<-contador50+1;
+	FinMientras
+	Mientras (dinero >= 10) Hacer
+		dinero<-dinero-10;
+		contador10<-contador10+1;
+	FinMientras
+	Mientras (dinero >= 5) Hacer
+		dinero<-dinero-5;
+		contador5<-contador5+1;
+	FinMientras
+	Mientras (dinero >= 1) Hacer
+		dinero<-dinero-1;
+		contador1<-contador1+1;
+	FinMientras
+	Escribir contador20000;
+	Escribir contador10000;
+	Escribir contador5000;
+	Escribir contador2000;
+	Escribir contador1000;
+	Escribir contador500;
+	Escribir contador100;
+	Escribir contador50;
+	Escribir contador10;
+	Escribir contador5;
+	Escribir contador1;
+FinProceso
