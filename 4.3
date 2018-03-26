@@ -1,0 +1,24 @@
+Algoritmo NotaClasificacion
+	Escribir "Ingrese su nota";
+	Leer nota;
+	contador<- 0
+	Mientras (nota>=1.0 Y nota<=3.9 Y contador<1) hacer
+		contador<-contadort+1
+		Escribir "Su nota es insuficiente ";
+	FinMientras
+	Mientras (nota>=4.0 Y nota<=4.9 Y contador<1) hacer
+		contador<-contadort+1
+		Escribir "Su nota es suficiente ";
+	FinMientras
+	Mientras (nota>=5.0 Y nota<=5.9 Y contador<1) hacer
+		contador<-contadort+1
+		Escribir "Su nota esta bien";
+	FinMientras
+	Mientras (nota>=6.0 Y nota<=7.0 Y contador<1) hacer
+		contador<-contadort+1
+		Escribir "Su nota esta muy bien";
+	FinMientras
+	Si (nota<=0.9 O nota>7.0) Entonces
+		Escribir "Nota invalida";
+	FinSi
+FinAlgoritmo

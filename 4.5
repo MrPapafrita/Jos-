@@ -1,0 +1,93 @@
+Algoritmo Afp
+	Escribir "Ingrese la cantidad de empleados";
+	Leer empleados;
+	contador<- 0;
+	Mientras (contador<empleados) Hacer
+		
+		Escribir "DATOS EMPLEADO NUMERO " ,contador+1;
+		
+		Repetir
+			Escribir "Ingrese su grado de trabajador (1-2-3)";
+			Leer grado
+		Hasta Que (grado=1) o (grado=2) o (grado=3)
+		Repetir
+			Escribir "Ingrese la cantidad de horas trabajadas"
+			Leer hTrabajadas;
+		Hasta Que (hTrabajadas>=160) y (hTrabajadas<=200)
+		Repetir
+			Escribir "Ingrese su isapre: (Colmena=1, Ban medica=2, Vida3=3, Fonasa=4";
+			Leer isapre
+		Hasta Que (isapre=1) o (isapre=2) o (isapre=3) o (isapre=4)
+		Repetir
+			Escribir "Ingrese su AFP: (BanSander=1),(Geometrica SA=2),(Cumprum =3),(Provida=4)";
+			Leer aefep;
+		Hasta Que ((aefep=1) o (aefep=2) o (aefep=3) o (aefep=4))
+		
+		Si (grado=1) Entonces
+			sBase<- 450000;
+		Sino
+			si (grado=2) Entonces
+				sBase<- 550000;
+			Sino
+				Si (grado=3) Entonces
+					sBase<- 700000;
+				FinSi
+			FinSi
+		FinSi
+		
+		hExtras<- htrabajadas-160;
+		
+		Si (hExtras>=1 Y hExtras<=3) Entonces
+			bonoExtra<- hExtras*2000;
+		Sino
+			Si (hExtras>=4 Y hExtras<=7)
+				bonoExtra<- hExtras*3000;
+			Sino
+				Si (hExtras>7)
+					bonoExtra<- hExtras*3500;
+					Si (hExtras=0) Entonces
+						bonoExtra<- 0;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		
+		Si (isapre=1) Entonces
+			descIsapre<- (sBase*6.5)/100;
+		Sino
+			Si (isapre=2) Entonces
+				descIsapre<- (sBase*7.3)/100;
+			Sino
+				Si (isapre=3) Entonces
+					descIsapre<- (sBase*7)/100;
+				Sino
+					Si(isapre=4) Entonces
+						descIsapre<- (sBase*7)/100;
+					FinSi
+				FinSi
+			FinSi
+			
+		FinSi
+		Si (aefep=1) Entonces
+			descAefep<- (sBase*12)/100;
+		Sino
+			Si (aefep=2) Entonces
+				descAefep<- (sBase*13.4)/100;
+			Sino
+				Si (aefep=3) Entonces
+					descAefep<- (sBase*12.3)/100;
+				Sino
+					Si (aefep=4) Entonces
+						descAefep<- (sBase*12.9)/100;
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		contador<- contador+1;
+		sueldoT<- sBase+bonoExtra-descAefep-descIsapre
+		Escribir "El sueldo del empleado numero ",contador,"es de: " ,sueldoT,"Pesos"
+	
+	FinMientras
+	
+FinAlgoritmo
+
